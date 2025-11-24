@@ -2,7 +2,7 @@ import { Project, Skill, SocialLink } from './types';
 
 export const PORTFOLIO_OWNER = "Agung Cahya Gumilar";
 // GANTI URL INI DENGAN URL FOTO ANDA YANG SEBENARNYA
-export const PROFILE_IMAGE_URL = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80";
+export const PROFILE_IMAGE_URL = "https://i.imgur.com/CwW9WsX.jpeg";
 
 export const SOCIALS: SocialLink[] = [
   { platform: "GitHub", url: "https://github.com", icon: "github" },
