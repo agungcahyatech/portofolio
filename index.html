@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agung Cahya Gumilar | Fullstack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          colors: {
+            primary: '#00db83', // NoPixel Mint Green
+            secondary: '#27272a', // Zinc 800
+            dark: '#09090b', // Zinc 950 (Deep Black)
+            surface: '#18181b', // Zinc 900
+            light: '#ffffff',
+            'light-surface': '#f4f4f5', // Zinc 100
+          },
+          keyframes: {
+            'text-glow': {
+              '0%, 100%': {
+                'text-shadow': '0 0 4px rgba(0, 219, 131, 0.1)',
+                opacity: '0.9'
+              },
+              '50%': {
+                'text-shadow': '0 0 15px rgba(0, 219, 131, 0.6), 0 0 5px rgba(0, 219, 131, 0.4)',
+                opacity: '1'
+              },
+            }
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'text-glow': 'text-glow 2.5s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #09090b;
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background: #09090b;
+    }
+
+    :not(.dark) ::-webkit-scrollbar-track {
+      background: #f4f4f5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #27272a;
+      border-radius: 4px;
+    }
+
+    :not(.dark) ::-webkit-scrollbar-thumb {
+      background: #d4d4d8;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00db83;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react/jsx-dev-runtime": "https://esm.sh/react@18.3.1/jsx-dev-runtime",
+    "@google/genai": "https://esm.sh/@google/genai",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body
+  class="bg-light dark:bg-dark text-zinc-800 dark:text-zinc-200 antialiased selection:bg-primary selection:text-black transition-colors duration-300">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
